@@ -4,7 +4,7 @@ export default class MyComponent extends Component {
 
     constructor(props) {
         //debugger;
-        //console.log(props.text);
+        console.log(props.text);
         super(props);
     }
     render() {

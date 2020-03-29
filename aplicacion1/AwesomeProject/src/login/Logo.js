@@ -13,7 +13,7 @@ export default class Logo extends Component {
         return (
             <View style={styles.container}>
                 <Image source={logo} style={styles.image} />
-                <Text style={styles.text} >Donar</Text>
+                <Text style={styles.text} >Donar Sangre</Text>
             </View>
 
         );
@@ -22,19 +22,24 @@ export default class Logo extends Component {
 };
 const styles=StyleSheet.create({
     container: {
-        flex:1,
+        
+        paddingTop:100,
         alignItems:'center',
         justifyContent:'center',
     },
-    image:{
-        width: 80,
-        height:80,
+    image:{  
+        
+        width: 200,
+        height: 200,
+        //ajustar el contenido de la imagen
+        resizeMode: 'contain'
     },
     text:{
         color: 'white',
         fontWeight:'bold',
         backgroundColor:'transparent',
-        marginTop:20,
+        marginTop:10,
+        paddingBottom:50,
     },
 
 });
