@@ -5,7 +5,6 @@ import Colors from '../config/colors';
 import Constants from '../config/constants';
 
 //componentes
-import Casos from './CVCasos'
 import CVCasos from './CVCasos';
 
 
@@ -20,6 +19,7 @@ const CVCiudad = (props) => {
             placeholder={Constants.PLACEHOLDER}
             autoCorrect={false}
             secureTextEntry={false}
+            placeholderTextColor={Colors.plomo3}
             />
             <CVCasos 
             typeCase={Constants.T2}
@@ -27,6 +27,7 @@ const CVCiudad = (props) => {
             placeholder={Constants.PLACEHOLDER}
             autoCorrect={false}
             secureTextEntry={false}
+            placeholderTextColor={Colors.plomo3}
             />
         </View>
 

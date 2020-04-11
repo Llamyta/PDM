@@ -6,21 +6,19 @@ import PropTypes from 'prop-types';
 
 const CVCasos = (props) => {
 
-    const { typeCase, plaholder,onChangeText,secureTextEntry,autoCorrect } = props;
+    const { typeCase, plaholder, onChangeText, secureTextEntry, autoCorrect } = props;
 
     return (
         <>
             <View style={styles.contenedor} >
                 <Text style={styles.texto}>{typeCase}</Text>
                 <TextInput
-                    style={styles.input}                 
+                    style={styles.input}
                     underlineColorAndroid="transparent"
                     onChangeText={onChangeText}
                     placeholder={plaholder}
                     secureTextEntry={secureTextEntry}
-                    autoCorrect={autoCorrect}                   
-                    placeholderTextColor={Colors.black}
-                    selectionColor={Colors.blue}
+                    autoCorrect={autoCorrect}
                 />
             </View>
         </>
@@ -29,9 +27,9 @@ const CVCasos = (props) => {
 
 CVCasos.propTypes = {
     onChangeText: PropTypes.func.isRequired,
-    placeholder:PropTypes.string.isRequired,
-    autoCorrect:PropTypes.bool,
-    secureTextEntry:PropTypes.bool
+    placeholder: PropTypes.string.isRequired,
+    autoCorrect: PropTypes.bool,
+    secureTextEntry: PropTypes.bool
 };
 
 const styles = StyleSheet.create({
