@@ -4,12 +4,13 @@ import { StyleSheet, View, TextInput } from 'react-native';
 
 
 
-import LoginScreen from './src/View/Login/LoginScreen'
+import CV from './src/View/Login/LoginScreen'
+
 
 const App: () => React$Node = () => {
   return (
 
-      <LoginScreen />
+      <CV />
       
   );
 };
