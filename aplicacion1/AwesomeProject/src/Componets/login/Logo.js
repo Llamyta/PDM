@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { StyleSheet, View, Text, Image } from 'react-native';
 
-import Logo from '../../image/donasangre.png';
+import Logo from '../../Config/Image';
 
 
 export default class logo extends Component{
@@ -12,7 +12,7 @@ export default class logo extends Component{
         return(
             <>
                 <View style={styles.container}>
-                    <Image source={Logo} style={styles.image}/>
+                    <Image source={Logo.LOGO} style={styles.image}/>
                     <Text style={styles.text}>
                         Donar Sangre
                     </Text>

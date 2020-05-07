@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { StyleSheet, View, Text, Image } from 'react-native';
 
-import logo from '../image/donasangre.png';
+import logo from '../../assets/donasangre.png';
 
 
 export default class Logo extends Component {

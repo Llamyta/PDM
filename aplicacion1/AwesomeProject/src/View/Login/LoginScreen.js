@@ -8,8 +8,7 @@ import LogoLogin from '../../Componets/login/Logo';
 import Constants from '../../Config/Constants';
 import Colors from '../../Config/colors';
 
-import User from '../../image/username.png'
-import Pass from '../../image/password.png'
+import Img from '../../Config/Image'
 
 class LoginScreen extends Component {
     constructor(props) {
@@ -46,21 +45,21 @@ class LoginScreen extends Component {
           <View style={stylesLoginScreen.form}>
             <TextInputLogin
               onChangeText={this._onChangeTextUsername}
-              source={User}
-              placeholder={Constants.USERNAME}
+              source={Img.US}
+              placeholder={Constants.STRINGS.USERNAME}
               secureTextEntry={false}
               autoCorrect={false}
             />
             <TextInputLogin
               onChangeText={this._onChangeTextPassword}
-              source={Pass}
-              placeholder={Constants.PASSWORD}
+              source={Img.PWD}
+              placeholder={Constants.STRINGS.PASSWORD}
               secureTextEntry={true}
               autoCorrect={false}
             />
             <ButtonLogin
               onPress={this._onPress}
-              titleButton={Constants.TITLE_BUTTON}
+              titleButton={Constants.STRINGS.TITLE_BUTTON}
             />
           </View>
         </View>

@@ -1,16 +1,15 @@
-
 import React from 'react';
 import { StyleSheet, View, TextInput } from 'react-native';
 
 
 
-import CV from './src/View/Login/LoginScreen'
+import MainNavegator from './src/Navegator/MainNavegator'
 
 
 const App: () => React$Node = () => {
   return (
 
-      <CV />
+      <MainNavegator />
       
   );
 };
