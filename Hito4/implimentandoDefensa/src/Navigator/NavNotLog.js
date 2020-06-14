@@ -30,7 +30,7 @@ function App() {
                     options={{
                         title: 'Register Form',
                         headerStyle: {
-                            backgroundColor: Colors.appPrimary,
+                            backgroundColor: Colors.blue,
                         },
                         headerTintColor: Colors.white,
                         headerTitleStyle: {

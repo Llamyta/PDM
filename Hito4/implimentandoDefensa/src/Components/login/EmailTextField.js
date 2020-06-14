@@ -48,10 +48,10 @@ const styles = StyleSheet.create({
     borderRadius: 10,
     marginTop: 5,
     marginBottom: 10,
-    borderColor: Colors.black2,
-    borderWidth: 1,
+    borderColor: Colors.blue,
+    borderWidth: 0.2,
     justifyContent: 'center',
-    backgroundColor: Colors.fieldBackgroud,
+    backgroundColor: Colors.silver,
   },
   inlineImg: {
     position: 'absolute',

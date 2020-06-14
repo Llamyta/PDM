@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import {View, Text, Image, StyleSheet} from 'react-native';
 
 import Images from '../../Config/Images';
+import Colors from '../../Config/Colors'
 
 export default class Logo extends Component {
   constructor(props) {
@@ -12,7 +13,7 @@ export default class Logo extends Component {
     return (
       <View style={styles.container}>
         <Image source={Images.LOGO} style={styles.image} />
-        <Text style={styles.text}>GooWia Solutions</Text>
+        <Text style={styles.text}>My Fist Package</Text>
       </View>
     );
   }
@@ -29,9 +30,10 @@ const styles = StyleSheet.create({
     height: 140,
   },
   text: {
-    color: 'white',
+    color: Colors.blue,
     fontWeight: 'bold',
     backgroundColor: 'transparent',
     marginTop: 20,
+    fontSize:20
   },
 });

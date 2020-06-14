@@ -149,7 +149,7 @@ const LoginScreen = ({navigation}) => {
 const stylesLoginScreen = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: Colors.blue,
+    backgroundColor: Colors.white,
     justifyContent: 'center',
     alignItems: 'center',
   },

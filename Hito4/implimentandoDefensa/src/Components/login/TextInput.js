@@ -43,14 +43,13 @@ const stylesTextInput = StyleSheet.create({
   textInput: {
     height: Constants.CONFIG.HEADER_HEIGHT * 0.06,
     width: Constants.CONFIG.SCREEN_WIDTH * 0.85,
-    backgroundColor: 'rgba(255, 255, 255, 0.4)',
+    backgroundColor: Colors.silver,
     alignItems: 'center',
     color: Colors.white,
     paddingLeft: 40,
     borderRadius: 10,
-    borderWidth: 1,
-    borderColor: Colors.black2,
-    borderBottomWidth: StyleSheet.hairlineWidth,
+    borderWidth: 0.2,
+    borderColor: Colors.blue,
     marginBottom: 20,
   },
   inlineImg: {

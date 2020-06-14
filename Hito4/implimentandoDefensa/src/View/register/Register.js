@@ -101,7 +101,7 @@ const RegisterScreen = ({navigation}) => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: Colors.blue,
+    backgroundColor: Colors.white,
     alignItems: 'center',
     justifyContent: 'center'
   },

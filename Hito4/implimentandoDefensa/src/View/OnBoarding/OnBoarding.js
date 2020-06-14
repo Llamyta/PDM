@@ -1,5 +1,5 @@
 import React from 'react';
-import LlamytasOnboarding from 'llamytasonboarding/src/View/Onboarding';
+import LlamytasOnboarding from 'llamytasonboarding/src';
 import IMG from '../../Config/Images';
 import Colors from '../../Config/Colors'
 import Constants from '../../Config/Constants'
