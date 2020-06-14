@@ -17,7 +17,7 @@ const strings={
     FB2:"Integracion de React Native",
     FB3:"con Firebase",
     IN:"PDM",
-    IN2:"Programacion de Dispositivos",
+    IN2:"Programacion de Dispositivos Moviles Unifranz",
     IN3:"Moviles-Unifranz",
 
 }

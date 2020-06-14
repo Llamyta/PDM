@@ -1,51 +1,35 @@
-import React, {Component} from 'react';
-import PropTypes from 'prop-types';
-import {StyleSheet, View, TouchableOpacity, Text} from 'react-native';
-import Colors from '../../config/colors';
+import React from 'react';
+import { StyleSheet, View } from 'react-native';
 import Button from './Button';
-import constants from '../../config/constants';
 
-class button extends Component {
-  constructor(props) {
-    super(props);
-  }
 
-  render() {
-    return (
-      
-      <View style={styles.button}>
-        <Button 
-        titleButton={constants.STRINGS.PREV}
-        onPress={this.props.onPress}
-        />
-        <Button 
-        titleButton={constants.STRINGS.NEXT}
-        onPress={this.props.onPress2}
-        />
+function buttonPN({ onPress, onPress2, styleButton,titleButtonPrev,titleButtonNext }) {
+  return (
+    <View style={styles.button}>
 
-        {/* <TouchableOpacity style={styles.container} onPress={this.props.onPress}>
-          <Text style={styles.text}>{this.props.titleButton2}</Text>
-        </TouchableOpacity> */}
+      <Button
+        titleButton={titleButtonPrev}
+        onPress={onPress}
+        styleButton={styleButton}
+      />
+      <Button
+        titleButton={titleButtonNext}
+        onPress={onPress2}
+        styleButton={styleButton}
+      />
 
-      </View>
-    );
-  }
-}
+    </View>
+  );
+};
 const styles = StyleSheet.create({
-    button: {
-        marginTop: 100,
-        flex: 1,
-        flexDirection: 'row',
-        justifyContent: 'space-between',
-        paddingHorizontal:20
-    },
-    container: {
-        width: '50%',
-        alignItems: 'center',
-        
+  button: {
+    marginTop: 100,
+    flex: 1,
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    paddingHorizontal: 20
   },
-  });
 
-button.propTypes = {};
+});
 
-export default button;
+export default buttonPN;

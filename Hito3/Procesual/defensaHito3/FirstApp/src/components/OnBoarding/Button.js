@@ -11,8 +11,15 @@ class button extends Component {
     render() {
         return (
             <View>
-                <TouchableOpacity style={stylesButton.container} onPress={this.props.onPress}>
-                    <Text style={stylesButton.text}>{this.props.titleButton}</Text>
+                <TouchableOpacity
+                    style={[stylesButton.container, this.props.styleButton]}
+                    onPress={this.props.onPress}
+                >
+                    <Text
+                        style={[stylesButton.text, this.props.styleButton]}
+                    >
+                        {this.props.titleButton}
+                    </Text>
                 </TouchableOpacity>
             </View>
         );
@@ -20,21 +27,15 @@ class button extends Component {
 }
 const stylesButton = StyleSheet.create({
     container: {
-        width: '100%',
-        alignItems: 'center',
-        paddingVertical: 20,
         borderRadius: 10,
-        borderWidth: 0.5,
-        borderColor: Colors.white,
-        paddingLeft:30,
-        paddingRight:30,
+        borderWidth: 1,
+        paddingHorizontal: '8%',
+        paddingVertical: '22%',
+        justifyContent: 'center'
     },
-    text: { 
-        color: Colors.white, 
-        fontWeight:'bold',
-        textAlign: 'center', 
-        height: 20,
-
+    text: {
+        fontWeight: 'bold',
+        textAlign: 'center',
     },
 });
 
